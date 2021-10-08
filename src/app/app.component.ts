@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Angular-Firestore-Cliente-CRUD';
+  titulo = 'Angular-Firestore-Cliente-CRUD';
+  descricao = 'Projeto Angular 11 Firestore'
 }

@@ -10,7 +10,7 @@ import { ClienteDetalhesComponent } from './clientes/cliente-detalhes/cliente-de
 import { ClientesListaComponent } from './clientes/clientes-lista/clientes-lista.component';
 import { CriarClienteComponent } from './clientes/criar-cliente/criar-cliente.component';
 import { AngularFireModule } from '@angular/fire';
-import { AngularFirestoreModule, FirestoreSettingsToken } from '@angular/fire/firestore';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
 
 @NgModule({
   declarations: [
@@ -26,7 +26,7 @@ import { AngularFirestoreModule, FirestoreSettingsToken } from '@angular/fire/fi
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule
   ],
-  providers: [{ provide: FirestoreSettingsToken, useValue: {} }],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

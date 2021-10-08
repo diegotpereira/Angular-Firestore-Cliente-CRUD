@@ -20,7 +20,7 @@ export class ClientesListaComponent implements OnInit {
   }
 
   buscarClienteLista() {
-    this.clienteService.buscarClienteLista().snapshotChanges.pipe(
+    this.clienteService.buscarClienteLista().snapshotChanges().pipe(
       map(changes => 
         changes.map(c => 
           ({ key: c.payload.doc.id, ...c.payload.doc.data()})
